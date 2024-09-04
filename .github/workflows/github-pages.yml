@@ -1,3 +1,5 @@
+name: 🗒️ GitHub Pages
+
 on:
   push:
     branches: [ "main" ]
@@ -5,7 +7,6 @@ on:
 
 env:
   NODE_VERSION: '20.x'
-  URL: 'https://kibibit.io/phaser-seed'
 
 permissions:
   contents: read
