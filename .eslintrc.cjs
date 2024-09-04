@@ -115,7 +115,8 @@ module.exports = {
         '@html-eslint/require-button-type': 'error',
         '@html-eslint/no-obsolete-tags': 'error',
         '@html-eslint/no-duplicate-id': 'error',
-        '@html-eslint/no-positive-tabindex': 'error'
+        '@html-eslint/no-positive-tabindex': 'error',
+        '@html-eslint/require-open-graph-protocol': 'error'
       }
     }
   ],
