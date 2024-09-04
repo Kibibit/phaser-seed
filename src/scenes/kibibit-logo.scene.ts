@@ -9,7 +9,7 @@ export default class KibibitLogoScene extends Phaser.Scene {
     this.load.setBaseURL('https://kibibit.io/kibibit-assets');
 
     this.load.image('sky', '4HPEcJ8.jpg');
-    this.load.image('logo', '1x/long-white.png');
+    this.load.image('logo', 'long-white-small.png');
     this.load.image('red', 'https://labs.phaser.io/assets/particles/red.png' );
   }
 
