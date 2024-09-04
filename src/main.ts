@@ -5,8 +5,8 @@ import KibibitLogoScene from './scenes/kibibit-logo.scene';
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
   parent: 'app',
-  width: 800,
-  height: 600,
+  width: document.body.clientWidth,
+  height: (document.body.clientHeight || 700) / 2,
   physics: {
     default: 'arcade',
     arcade: {
