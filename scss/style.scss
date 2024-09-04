@@ -2,7 +2,8 @@ html,
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  // align-items: center;
 
   width: 100dvw;
   height: 100dvh;
@@ -14,4 +15,35 @@ body {
   line-height: 1.5;
 
   background-color: #212121;
+}
+
+#app {
+  position: relative;
+}
+
+canvas {
+  box-shadow: rgb(0 0 0 / 50%) 0 5px 10px;
+}
+
+.user-avatar {
+  --size: 150px;
+  position: absolute;
+  inset-block-start: calc(100dvh / 2 - var(--size) / 2);
+  inset-inline-start: calc(50% - var(--size) / 2);
+
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+
+  background-color: pink;
+
+  box-shadow: rgb(0 0 0 / 50%) 0 5px 10px;
+
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
