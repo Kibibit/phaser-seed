@@ -61,6 +61,12 @@ export default class ProfileScene extends Phaser.Scene {
       frameRate: 10,
       repeat: -1
     });
+
+    this.anims.create({
+      key: 'idle',
+      frames: [ { key: 'player', frame: 'p1_stand' } ],
+      frameRate: 10
+    }); 
   }
 
   update(): void {
