@@ -94,6 +94,7 @@ module.exports = {
         '@stylistic/js/max-len': [
           'error', {
             'code': 80,
+            'comments': 120,
             'ignoreStrings': true,
             'ignoreTemplateLiterals': true
           }
