@@ -12,13 +12,13 @@ export default class ProfileScene extends Phaser.Scene {
 
   preload() {
     // map made with Tiled in JSON format
-    this.load.tilemapTiledJSON('map', '/map.json');
+    this.load.tilemapTiledJSON('map', 'map.json');
     // tiles in spritesheet 
-    this.load.spritesheet('tiles', '/tiles.png', { frameWidth: 70, frameHeight: 70 });
+    this.load.spritesheet('tiles', 'tiles.png', { frameWidth: 70, frameHeight: 70 });
     // simple coin image
-    this.load.image('coin', '/coinGold.png');
+    this.load.image('coin', 'coinGold.png');
     // player animations
-    this.load.atlas('player', '/player.png', '/player.json');
+    this.load.atlas('player', 'player.png', 'player.json');
   }
 
   create() {
