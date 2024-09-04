@@ -5,8 +5,6 @@ export default class ProfileScene extends Phaser.Scene {
   player!: Phaser.Physics.Arcade.Sprite;
   cursors!: Phaser.Types.Input.Keyboard.CursorKeys;
   groundLayer!: Phaser.Tilemaps.TilemapLayer;
-  coinLayer: any;
-  text: any;
 
   constructor() {
     super('kibibit-logo');
@@ -65,7 +63,7 @@ export default class ProfileScene extends Phaser.Scene {
     });
   }
 
-  update(time: number, delta: number): void {
+  update(): void {
     // if (this.cursors.left.isDown) {
     //   this.player.setVelocityX(-200); // move left
     //   this.player.anims.play('walk', true);
