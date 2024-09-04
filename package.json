@@ -9,7 +9,7 @@
 		"lint:styles": "stylelint \"**/*.scss\" --config .stylelintrc.cjs",
 		"lint:styles:fix": "stylelint \"**/*.scss\" --config .stylelintrc.cjs --fix",
 		"start": "vite",
-		"build": "tsc && vite build && npm run scss",
+		"build": "tsc && npm run scss && vite build",
 		"preview": "vite preview",
 		"prepare": "husky",
 		"scss": "sass scss/style.scss css/style.css",
