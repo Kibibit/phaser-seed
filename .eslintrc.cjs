@@ -53,10 +53,8 @@ module.exports = {
               // 5. Internal kibibit packages (inside this project)
               [ '^@kb-' ],
               // 6. Parent imports. Put `..` last.
-              //    Other relative imports. Put same-folder imports and `.` last.
               [ '^\\.\\.(?!/?$)', '^\\.\\./?$', '^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$' ],
               // 7. Side effect imports.
-              // https://riptutorial.com/javascript/example/1618/importing-with-side-effects
               [ '^\\u0000' ]
             ]
           }
@@ -93,7 +91,13 @@ module.exports = {
         '@stylistic/js/semi-spacing': 'error',
         '@stylistic/js/indent': [ 'error', 2 ],
         '@stylistic/js/template-curly-spacing': [ 'error', 'always' ],
-        '@stylistic/js/max-len': [ 'error', { 'code': 80, 'ignoreStrings': true, 'ignoreTemplateLiterals': true } ]
+        '@stylistic/js/max-len': [
+          'error', {
+            'code': 80,
+            'ignoreStrings': true,
+            'ignoreTemplateLiterals': true
+          }
+        ]
       }
     },
     {
